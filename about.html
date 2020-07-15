@@ -1,0 +1,1313 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta
+      name="description"
+      content="EYRA is a platform for benchmarking the performance of scientific algorithms"
+    />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#1fb8ea" />
+    <script
+      async=""
+      src="https://www.googletagmanager.com/gtag/js?id=UA-142543978-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-142543978-1", { anonymize_ip: true });
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="static/style/index.css" />
+    <link rel="stylesheet" href="static/style/nprogress.css" />
+    <link rel="stylesheet" href="static/style/observable.css" />
+    <link rel="shortcut icon" href="static/favicon.ico" />
+    <title>EYRA Benchmark Platform</title>
+    <meta
+      name="viewport"
+      content="width=device-width,minimum-scale=1,initial-scale=1"
+    />
+    <meta charset="utf-8" />
+    <title>About | EYRA Benchmark Platform</title>
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://www.eyrabenchmark.net/",
+              "name": "EYRA Benchmark Platform"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://www.eyrabenchmark.net/about",
+              "name": "About"
+            }
+          }
+        ]
+      }
+    </script>
+    <meta name="next-head-count" content="4" />
+    <link
+      rel="preload"
+      href="_next/static/NTnL_wv5E_81H4VZtcYAU/pages/about.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="_next/static/NTnL_wv5E_81H4VZtcYAU/pages/_app.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="_next/static/chunks/commons.03b28b1d231bf6a5bf84.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="_next/static/chunks/styles.3678095508a3a5d6aaf2.js"
+      as="script"
+    />
+    <link rel="stylesheet" href="_next/static/css/styles.97ad6190.chunk.css" />
+    <style id="jss-server-side">
+      .MuiPaper-root {
+        color: rgba(0, 0, 0, 0.87);
+        transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+        background-color: #fff;
+      }
+      .MuiPaper-rounded {
+        border-radius: 4px;
+      }
+      .MuiPaper-elevation0 {
+        box-shadow: none;
+      }
+      .MuiPaper-elevation1 {
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2),
+          0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+      }
+      .MuiPaper-elevation2 {
+        box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2),
+          0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12);
+      }
+      .MuiPaper-elevation3 {
+        box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2),
+          0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.12);
+      }
+      .MuiPaper-elevation4 {
+        box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2),
+          0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+      }
+      .MuiPaper-elevation5 {
+        box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2),
+          0 5px 8px 0 rgba(0, 0, 0, 0.14), 0 1px 14px 0 rgba(0, 0, 0, 0.12);
+      }
+      .MuiPaper-elevation6 {
+        box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2),
+          0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
+      }
+      .MuiPaper-elevation7 {
+        box-shadow: 0 4px 5px -2px rgba(0, 0, 0, 0.2),
+          0 7px 10px 1px rgba(0, 0, 0, 0.14), 0 2px 16px 1px rgba(0, 0, 0, 0.12);
+      }
+      .MuiPaper-elevation8 {
+        box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+          0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+      }
+      .MuiPaper-elevation9 {
+        box-shadow: 0 5px 6px -3px rgba(0, 0, 0, 0.2),
+          0 9px 12px 1px rgba(0, 0, 0, 0.14), 0 3px 16px 2px rgba(0, 0, 0, 0.12);
+      }
+      .MuiPaper-elevation10 {
+        box-shadow: 0 6px 6px -3px rgba(0, 0, 0, 0.2),
+          0 10px 14px 1px rgba(0, 0, 0, 0.14),
+          0 4px 18px 3px rgba(0, 0, 0, 0.12);
+      }
+      .MuiPaper-elevation11 {
+        box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.2),
+          0 11px 15px 1px rgba(0, 0, 0, 0.14),
+          0 4px 20px 3px rgba(0, 0, 0, 0.12);
+      }
+      .MuiPaper-elevation12 {
+        box-shadow: 0 7px 8px -4px rgba(0, 0, 0, 0.2),
+          0 12px 17px 2px rgba(0, 0, 0, 0.14),
+          0 5px 22px 4px rgba(0, 0, 0, 0.12);
+      }
+      .MuiPaper-elevation13 {
+        box-shadow: 0 7px 8px -4px rgba(0, 0, 0, 0.2),
+          0 13px 19px 2px rgba(0, 0, 0, 0.14),
+          0 5px 24px 4px rgba(0, 0, 0, 0.12);
+      }
+      .MuiPaper-elevation14 {
+        box-shadow: 0 7px 9px -4px rgba(0, 0, 0, 0.2),
+          0 14px 21px 2px rgba(0, 0, 0, 0.14),
+          0 5px 26px 4px rgba(0, 0, 0, 0.12);
+      }
+      .MuiPaper-elevation15 {
+        box-shadow: 0 8px 9px -5px rgba(0, 0, 0, 0.2),
+          0 15px 22px 2px rgba(0, 0, 0, 0.14),
+          0 6px 28px 5px rgba(0, 0, 0, 0.12);
+      }
+      .MuiPaper-elevation16 {
+        box-shadow: 0 8px 10px -5px rgba(0, 0, 0, 0.2),
+          0 16px 24px 2px rgba(0, 0, 0, 0.14),
+          0 6px 30px 5px rgba(0, 0, 0, 0.12);
+      }
+      .MuiPaper-elevation17 {
+        box-shadow: 0 8px 11px -5px rgba(0, 0, 0, 0.2),
+          0 17px 26px 2px rgba(0, 0, 0, 0.14),
+          0 6px 32px 5px rgba(0, 0, 0, 0.12);
+      }
+      .MuiPaper-elevation18 {
+        box-shadow: 0 9px 11px -5px rgba(0, 0, 0, 0.2),
+          0 18px 28px 2px rgba(0, 0, 0, 0.14),
+          0 7px 34px 6px rgba(0, 0, 0, 0.12);
+      }
+      .MuiPaper-elevation19 {
+        box-shadow: 0 9px 12px -6px rgba(0, 0, 0, 0.2),
+          0 19px 29px 2px rgba(0, 0, 0, 0.14),
+          0 7px 36px 6px rgba(0, 0, 0, 0.12);
+      }
+      .MuiPaper-elevation20 {
+        box-shadow: 0 10px 13px -6px rgba(0, 0, 0, 0.2),
+          0 20px 31px 3px rgba(0, 0, 0, 0.14),
+          0 8px 38px 7px rgba(0, 0, 0, 0.12);
+      }
+      .MuiPaper-elevation21 {
+        box-shadow: 0 10px 13px -6px rgba(0, 0, 0, 0.2),
+          0 21px 33px 3px rgba(0, 0, 0, 0.14),
+          0 8px 40px 7px rgba(0, 0, 0, 0.12);
+      }
+      .MuiPaper-elevation22 {
+        box-shadow: 0 10px 14px -6px rgba(0, 0, 0, 0.2),
+          0 22px 35px 3px rgba(0, 0, 0, 0.14),
+          0 8px 42px 7px rgba(0, 0, 0, 0.12);
+      }
+      .MuiPaper-elevation23 {
+        box-shadow: 0 11px 14px -7px rgba(0, 0, 0, 0.2),
+          0 23px 36px 3px rgba(0, 0, 0, 0.14),
+          0 9px 44px 8px rgba(0, 0, 0, 0.12);
+      }
+      .MuiPaper-elevation24 {
+        box-shadow: 0 11px 15px -7px rgba(0, 0, 0, 0.2),
+          0 24px 38px 3px rgba(0, 0, 0, 0.14),
+          0 9px 46px 8px rgba(0, 0, 0, 0.12);
+      }
+      .MuiAppBar-root {
+        width: 100%;
+        display: flex;
+        z-index: 1100;
+        box-sizing: border-box;
+        flex-shrink: 0;
+        flex-direction: column;
+      }
+      .MuiAppBar-positionFixed {
+        top: 0;
+        left: auto;
+        right: 0;
+        position: fixed;
+      }
+      .MuiAppBar-positionAbsolute {
+        top: 0;
+        left: auto;
+        right: 0;
+        position: absolute;
+      }
+      .MuiAppBar-positionSticky {
+        top: 0;
+        left: auto;
+        right: 0;
+        position: sticky;
+      }
+      .MuiAppBar-positionStatic {
+        position: static;
+      }
+      .MuiAppBar-positionRelative {
+        position: relative;
+      }
+      .MuiAppBar-colorDefault {
+        color: rgba(0, 0, 0, 0.87);
+        background-color: #f5f5f5;
+      }
+      .MuiAppBar-colorPrimary {
+        color: rgba(0, 0, 0, 0.87);
+        background-color: #1fb8ea;
+      }
+      .MuiAppBar-colorSecondary {
+        color: rgba(0, 0, 0, 0.87);
+        background-color: #fff;
+      }
+      .MuiButtonBase-root {
+        color: inherit;
+        border: 0;
+        cursor: pointer;
+        margin: 0;
+        display: inline-flex;
+        outline: 0;
+        padding: 0;
+        position: relative;
+        align-items: center;
+        user-select: none;
+        border-radius: 0;
+        vertical-align: middle;
+        -moz-appearance: none;
+        justify-content: center;
+        text-decoration: none;
+        background-color: transparent;
+        -webkit-appearance: none;
+        -webkit-tap-highlight-color: transparent;
+      }
+      .MuiButtonBase-root::-moz-focus-inner {
+        border-style: none;
+      }
+      .MuiButtonBase-root.Mui-disabled {
+        cursor: default;
+        pointer-events: none;
+      }
+      .MuiSvgIcon-root {
+        fill: currentColor;
+        width: 1em;
+        height: 1em;
+        display: inline-block;
+        font-size: 1.7142857142857142rem;
+        transition: fill 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+        flex-shrink: 0;
+        user-select: none;
+      }
+      .MuiSvgIcon-colorPrimary {
+        color: #1fb8ea;
+      }
+      .MuiSvgIcon-colorSecondary {
+        color: #fff;
+      }
+      .MuiSvgIcon-colorAction {
+        color: rgba(0, 0, 0, 0.54);
+      }
+      .MuiSvgIcon-colorError {
+        color: #f44336;
+      }
+      .MuiSvgIcon-colorDisabled {
+        color: rgba(0, 0, 0, 0.26);
+      }
+      .MuiSvgIcon-fontSizeInherit {
+        font-size: inherit;
+      }
+      .MuiSvgIcon-fontSizeSmall {
+        font-size: 1.4285714285714284rem;
+      }
+      .MuiSvgIcon-fontSizeLarge {
+        font-size: 2.5rem;
+      }
+      .MuiButton-root {
+        color: rgba(0, 0, 0, 0.87);
+        padding: 6px 16px;
+        font-size: 1rem;
+        min-width: 64px;
+        box-sizing: border-box;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s,
+          box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s,
+          border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+        font-family: Lato, sans-serif;
+        font-weight: 500;
+        line-height: 1.75;
+        border-radius: 4px;
+        text-transform: uppercase;
+      }
+      .MuiButton-root:hover {
+        text-decoration: none;
+        background-color: rgba(0, 0, 0, 0.08);
+      }
+      .MuiButton-root.Mui-disabled {
+        color: rgba(0, 0, 0, 0.26);
+      }
+      @media (hover: none) {
+        .MuiButton-root:hover {
+          background-color: transparent;
+        }
+      }
+      .MuiButton-root:hover.Mui-disabled {
+        background-color: transparent;
+      }
+      .MuiButton-label {
+        width: 100%;
+        display: inherit;
+        align-items: inherit;
+        justify-content: inherit;
+      }
+      .MuiButton-text {
+        padding: 6px 8px;
+      }
+      .MuiButton-textPrimary {
+        color: #1fb8ea;
+        float: right;
+        text-transform: none;
+      }
+      .MuiButton-textPrimary:hover {
+        background-color: rgba(31, 184, 234, 0.08);
+      }
+      @media (hover: none) {
+        .MuiButton-textPrimary:hover {
+          background-color: transparent;
+        }
+      }
+      .MuiButton-textSecondary {
+        color: #fff;
+      }
+      .MuiButton-textSecondary:hover {
+        background-color: rgba(255, 255, 255, 0.08);
+      }
+      @media (hover: none) {
+        .MuiButton-textSecondary:hover {
+          background-color: transparent;
+        }
+      }
+      .MuiButton-outlined {
+        border: 1px solid rgba(0, 0, 0, 0.23);
+        padding: 5px 16px;
+      }
+      .MuiButton-outlined.Mui-disabled {
+        border: 1px solid rgba(0, 0, 0, 0.26);
+      }
+      .MuiButton-outlinedPrimary {
+        color: #1fb8ea;
+        border: 1px solid rgba(31, 184, 234, 0.5);
+      }
+      .MuiButton-outlinedPrimary:hover {
+        border: 1px solid #1fb8ea;
+        background-color: rgba(31, 184, 234, 0.08);
+      }
+      @media (hover: none) {
+        .MuiButton-outlinedPrimary:hover {
+          background-color: transparent;
+        }
+      }
+      .MuiButton-outlinedSecondary {
+        color: #fff;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+      }
+      .MuiButton-outlinedSecondary:hover {
+        border: 1px solid #fff;
+        background-color: rgba(255, 255, 255, 0.08);
+      }
+      .MuiButton-outlinedSecondary.Mui-disabled {
+        border: 1px solid rgba(0, 0, 0, 0.26);
+      }
+      @media (hover: none) {
+        .MuiButton-outlinedSecondary:hover {
+          background-color: transparent;
+        }
+      }
+      .MuiButton-contained {
+        color: rgba(0, 0, 0, 0.87);
+        box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2),
+          0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12);
+        background-color: #e0e0e0;
+      }
+      .MuiButton-contained.Mui-focusVisible {
+        box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2),
+          0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
+      }
+      .MuiButton-contained:active {
+        box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+          0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+      }
+      .MuiButton-contained.Mui-disabled {
+        color: rgba(0, 0, 0, 0.26);
+        box-shadow: none;
+        background-color: rgba(0, 0, 0, 0.12);
+      }
+      .MuiButton-contained:hover {
+        background-color: #d5d5d5;
+      }
+      @media (hover: none) {
+        .MuiButton-contained:hover {
+          background-color: #e0e0e0;
+        }
+      }
+      .MuiButton-contained:hover.Mui-disabled {
+        background-color: rgba(0, 0, 0, 0.12);
+      }
+      .MuiButton-containedPrimary {
+        color: rgba(0, 0, 0, 0.87);
+        background-color: #1fb8ea;
+      }
+      .MuiButton-containedPrimary:hover {
+        background-color: #1580a3;
+      }
+      @media (hover: none) {
+        .MuiButton-containedPrimary:hover {
+          background-color: #1fb8ea;
+        }
+      }
+      .MuiButton-containedSecondary {
+        color: rgba(0, 0, 0, 0.87);
+        background-color: #fff;
+      }
+      .MuiButton-containedSecondary:hover {
+        background-color: #b2b2b2;
+      }
+      @media (hover: none) {
+        .MuiButton-containedSecondary:hover {
+          background-color: #fff;
+        }
+      }
+      .MuiButton-colorInherit {
+        color: inherit;
+        border-color: currentColor;
+      }
+      .MuiButton-sizeSmall {
+        padding: 4px 8px;
+        font-size: 0.9285714285714285rem;
+      }
+      .MuiButton-sizeLarge {
+        padding: 8px 24px;
+        font-size: 1.0714285714285714rem;
+      }
+      .MuiButton-fullWidth {
+        width: 100%;
+      }
+      .MuiIconButton-root {
+        flex: 0 0 auto;
+        color: rgba(0, 0, 0, 0.54);
+        padding: 12px;
+        overflow: visible;
+        font-size: 1.7142857142857142rem;
+        text-align: center;
+        transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+        border-radius: 50%;
+      }
+      .MuiIconButton-root:hover {
+        background-color: rgba(0, 0, 0, 0.08);
+      }
+      .MuiIconButton-root.Mui-disabled {
+        color: rgba(0, 0, 0, 0.26);
+        background-color: transparent;
+      }
+      @media (hover: none) {
+        .MuiIconButton-root:hover {
+          background-color: transparent;
+        }
+      }
+      .MuiIconButton-edgeStart {
+        margin-left: -12px;
+      }
+      .MuiIconButton-sizeSmall.MuiIconButton-edgeStart {
+        margin-left: -3px;
+      }
+      .MuiIconButton-edgeEnd {
+        margin-right: -12px;
+      }
+      .MuiIconButton-sizeSmall.MuiIconButton-edgeEnd {
+        margin-right: -3px;
+      }
+      .MuiIconButton-colorInherit {
+        color: inherit;
+      }
+      .MuiIconButton-colorPrimary {
+        color: #1fb8ea;
+      }
+      .MuiIconButton-colorPrimary:hover {
+        background-color: rgba(31, 184, 234, 0.08);
+      }
+      @media (hover: none) {
+        .MuiIconButton-colorPrimary:hover {
+          background-color: transparent;
+        }
+      }
+      .MuiIconButton-colorSecondary {
+        color: #fff;
+      }
+      .MuiIconButton-colorSecondary:hover {
+        background-color: rgba(255, 255, 255, 0.08);
+      }
+      @media (hover: none) {
+        .MuiIconButton-colorSecondary:hover {
+          background-color: transparent;
+        }
+      }
+      .MuiIconButton-sizeSmall {
+        padding: 3px;
+        font-size: 1.2857142857142856rem;
+      }
+      .MuiIconButton-label {
+        width: 100%;
+        display: flex;
+        align-items: inherit;
+        justify-content: inherit;
+      }
+      .MuiContainer-root {
+        width: 100%;
+        box-sizing: border-box;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+      @media (min-width: 600px) {
+        .MuiContainer-root {
+          padding-left: 24px;
+          padding-right: 24px;
+        }
+      }
+      @media (min-width: 960px) {
+        .MuiContainer-root {
+          padding-left: 32px;
+          padding-right: 32px;
+        }
+      }
+      @media (min-width: 600px) {
+        .MuiContainer-fixed {
+          max-width: 600px;
+        }
+      }
+      @media (min-width: 960px) {
+        .MuiContainer-fixed {
+          max-width: 960px;
+        }
+      }
+      @media (min-width: 1280px) {
+        .MuiContainer-fixed {
+          max-width: 1280px;
+        }
+      }
+      @media (min-width: 1920px) {
+        .MuiContainer-fixed {
+          max-width: 1920px;
+        }
+      }
+      @media (min-width: 0px) {
+        .MuiContainer-maxWidthXs {
+          max-width: 444px;
+        }
+      }
+      @media (min-width: 600px) {
+        .MuiContainer-maxWidthSm {
+          max-width: 600px;
+        }
+      }
+      @media (min-width: 960px) {
+        .MuiContainer-maxWidthMd {
+          max-width: 960px;
+        }
+      }
+      @media (min-width: 1280px) {
+        .MuiContainer-maxWidthLg {
+          max-width: 1280px;
+        }
+      }
+      @media (min-width: 1920px) {
+        .MuiContainer-maxWidthXl {
+          max-width: 1920px;
+        }
+      }
+      html {
+        box-sizing: border-box;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      *,
+      ::after,
+      ::before {
+        box-sizing: inherit;
+      }
+      b,
+      strong {
+        font-weight: bolder;
+      }
+      body {
+        color: rgba(0, 0, 0, 0.87);
+        margin: 0;
+        font-size: 1rem;
+        font-family: Lato, sans-serif;
+        font-weight: 400;
+        line-height: 1.43;
+        background-color: #fafafa;
+      }
+      @media print {
+        body {
+          background-color: #fff;
+        }
+      }
+      body::backdrop {
+        background-color: #fafafa;
+      }
+      @media print {
+        .MuiDialog-root {
+          position: absolute !important;
+        }
+      }
+      .MuiDialog-scrollPaper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .MuiDialog-scrollBody {
+        overflow-x: hidden;
+        overflow-y: auto;
+        text-align: center;
+      }
+      .MuiDialog-scrollBody:after {
+        width: 0;
+        height: 100%;
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .MuiDialog-container {
+        height: 100%;
+        outline: 0;
+      }
+      @media print {
+        .MuiDialog-container {
+          height: auto;
+        }
+      }
+      .MuiDialog-paper {
+        margin: 48px;
+        position: relative;
+        overflow-y: auto;
+      }
+      @media print {
+        .MuiDialog-paper {
+          box-shadow: none;
+          overflow-y: visible;
+        }
+      }
+      .MuiDialog-paperScrollPaper {
+        display: flex;
+        max-height: calc(100% - 96px);
+        flex-direction: column;
+      }
+      .MuiDialog-paperScrollBody {
+        display: inline-block;
+        text-align: left;
+        vertical-align: middle;
+      }
+      .MuiDialog-paperWidthFalse {
+        max-width: calc(100% - 96px);
+      }
+      .MuiDialog-paperWidthXs {
+        max-width: 444px;
+      }
+      @media (max-width: 539.95px) {
+        .MuiDialog-paperWidthXs.MuiDialog-paperScrollBody {
+          max-width: calc(100% - 96px);
+        }
+      }
+      .MuiDialog-paperWidthSm {
+        max-width: 600px;
+      }
+      @media (max-width: 695.95px) {
+        .MuiDialog-paperWidthSm.MuiDialog-paperScrollBody {
+          max-width: calc(100% - 96px);
+        }
+      }
+      .MuiDialog-paperWidthMd {
+        max-width: 960px;
+      }
+      @media (max-width: 1055.95px) {
+        .MuiDialog-paperWidthMd.MuiDialog-paperScrollBody {
+          max-width: calc(100% - 96px);
+        }
+      }
+      .MuiDialog-paperWidthLg {
+        max-width: 1280px;
+      }
+      @media (max-width: 1375.95px) {
+        .MuiDialog-paperWidthLg.MuiDialog-paperScrollBody {
+          max-width: calc(100% - 96px);
+        }
+      }
+      .MuiDialog-paperWidthXl {
+        max-width: 1920px;
+      }
+      @media (max-width: 2015.95px) {
+        .MuiDialog-paperWidthXl.MuiDialog-paperScrollBody {
+          max-width: calc(100% - 96px);
+        }
+      }
+      .MuiDialog-paperFullWidth {
+        width: calc(100% - 96px);
+      }
+      .MuiDialog-paperFullScreen {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        max-width: 100%;
+        max-height: none;
+        border-radius: 0;
+      }
+      .MuiDialog-paperFullScreen.MuiDialog-paperScrollBody {
+        margin: 0;
+        max-width: 100%;
+      }
+      .MuiToolbar-root {
+        display: flex;
+        position: relative;
+        align-items: center;
+      }
+      .MuiToolbar-gutters {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+      @media (min-width: 600px) {
+        .MuiToolbar-gutters {
+          padding-left: 24px;
+          padding-right: 24px;
+        }
+      }
+      .MuiToolbar-regular {
+        min-height: 56px;
+      }
+      @media (min-width: 0px) and (orientation: landscape) {
+        .MuiToolbar-regular {
+          min-height: 48px;
+        }
+      }
+      @media (min-width: 600px) {
+        .MuiToolbar-regular {
+          min-height: 64px;
+        }
+      }
+      .MuiToolbar-dense {
+        min-height: 48px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="__next">
+      <header
+        class="MuiPaper-root MuiPaper-elevation4 MuiAppBar-root MuiAppBar-positionFixed Header__appBar--IQPja MuiAppBar-colorPrimary mui-fixed"
+      >
+        <div
+          class="MuiToolbar-root MuiToolbar-regular Header__toolbar--_UyZq MuiToolbar-gutters"
+        >
+          <div class="Header__logo--1R6Es">
+            <a title="Home" href="/index.html"
+              ><img
+                src="static/images/logo.png"
+                alt="logo"
+                class="Header__logoImage--3oRjq"
+            /></a>
+          </div>
+          <button
+            class="MuiButtonBase-root MuiIconButton-root Header__drawerToggle--3EqCm"
+            tabindex="0"
+            type="button"
+            aria-label="Open drawer"
+          >
+            <span class="MuiIconButton-label"
+              ><svg
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                role="presentation"
+              >
+                <path
+                  d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+                ></path></svg
+            ></span>
+          </button>
+          <nav class="Header__desktopOnly--2t4aZ">
+            <ul class="NavigationMenu__nav--TiRgN">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="/benchmarks.html">Benchmarks</a></li>
+              <li><a href="tutorials.html">Tutorials</a></li>
+              <!--<li><a href="#">Login</a></li>-->
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="SideDrawer__sideDrawer--1MGJc SideDrawer__close--3POpo">
+        <nav>
+          <ul class="NavigationMenu__nav--TiRgN">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="/benchmarks.html">Benchmarks</a></li>
+            <li><a href="tutorials.html">Tutorials</a></li>
+            <!--<li><a href="#">Login</a></li>-->
+          </ul>
+        </nav>
+      </div>
+      <div id="root_container">
+        <main class="root__container--3WJyh">
+          <div class="root__bannerBackground--14ZKQ" id="about">
+            <img src="static/images/lightPaw.png" style="max-width: 100%;" />
+          </div>
+          <div class="MuiContainer-root MuiContainer-maxWidthLg">
+            <div class="About__container--1mEt7">
+              <div class="About__title--3Ha-E">
+                <h5>
+                  Enhance-Your-Research Alliance (EYRA) benchmark platform
+                </h5>
+              </div>
+              <p>
+                The
+                <strong
+                  ><a href="https://esciencecenter.nl/"
+                    >Netherlands eScience Center</a
+                  ></strong
+                >
+                and
+                <strong><a href="https://www.surf.nl/en">SURF</a></strong>
+                formed an alliance with the mission to enhance research by
+                providing an online platform to benchmark the performance of
+                research software. The platform is available for researchers
+                from all scientific disciplines, from physics and astronomy to
+                humanities, social sciences and life sciences.
+              </p>
+              <p>
+                This project is led by Adriënne Mendrik (Netherlands eScience
+                Center) and Annette Langedijk (SURF). Contact us if you would
+                like to collaborate or set-up a benchmark:
+                <a href="mailto: info@eyrabenchmark.net"
+                  >info@eyrabenchmark.net</a
+                >.
+              </p>
+              <pre></pre>
+              <h3>Why Benchmarking?</h3>
+              <p>
+                One of the currently most well-known benchmarks for algorithm
+                performance is<strong> </strong
+                ><a href="http://www.image-net.org/"
+                  ><strong></strong>ImageNet</a
+                >. In 2012, the ImageNet challenge [1,2] boosted the field of
+                Artificial Intelligence by showing a drastic improvement in
+                performance after the submission of a deep convolutional neural
+                network (CNN) called AlexNet [3]. In various scientific
+                disciplines there is a growing interest to benchmark algorithm
+                performance on research data using the same data, metrics and
+                ground truth to compare their performance for a specific task.
+                Translating research questions into a benchmark design has the
+                potential to lead to scientific breakthroughs. The point of
+                benchmarking is to test the current status of algorithms,
+                identify opportunities for improvement, and learn from eachother
+                in order to enhance research.
+              </p>
+              <p>
+                [1]
+                <a href="https://en.wikipedia.org/wiki/ImageNet"
+                  >https://en.wikipedia.org/wiki/ImageNet</a
+                ><br />[2]
+                <a
+                  href="https://www.economist.com/news/special-report/21700756-artificial-intelligence-boom-based-old-idea-modern-twist-not"
+                  >&quot;From not working to neural networking&quot;</a
+                >. <em>The Economist</em>. 25 June 2016. Retrieved 19 April
+                2019. <br />[3] Krizhevsky, Alex, Ilya Sutskever, and Geoffrey
+                E. Hinton. &quot;Imagenet classification with deep convolutional
+                neural networks.&quot;
+                <em>Advances in neural information processing systems</em>,
+                2012.
+              </p>
+              <pre></pre>
+              <h3>Why EYRA?</h3>
+              <p>
+                We aim to offer a platform to easily set-up and participate in
+                benchmarks for research. We aim to provide:
+              </p>
+              <ul>
+                <li>Instructions on how to set-up a benchmark</li>
+                <li>
+                  Algorithm submission in docker containers, such that
+                  algorithms can be run in the cloud on the testing data.
+                </li>
+                <li>
+                  Automatically generated leaderboard and analysis beyond the
+                  leaderboard to identify strengths and weaknesses.
+                </li>
+                <li>
+                  FAIR (Findable, Accessible, Interoperable, and Reusable)
+                  benchmarks, data, algorithms, and evaluation metrics.
+                </li>
+                <li>SURF infrastructure.</li>
+                <li>
+                  Connect people from different scientific disciplines and
+                  promote cross-fertilization.
+                </li>
+              </ul>
+              <p>
+                <em
+                  >We are not there yet.
+                  <strong
+                    >The platform is still actively under development. </strong
+                  >Click the
+                  <strong><a href="#subscribe">Subscribe</a> </strong>button at
+                  the bottom of the page to stay up to date.</em
+                >
+              </p>
+              <h2><br />Source code</h2>
+              <p>
+                EYRA repository:
+                <a href="https://github.com/EYRA-Benchmark"
+                  >https://github.com/EYRA-Benchmark</a
+                >
+              </p>
+              <p>
+                The EYRA benchmark platform is an open source platform based on
+                the open source
+                <a href="https://grand-challenge.org/Create_your_own_challenge/"
+                  >COMIC platform</a
+                >, which is associated to
+                <a href="https://grand-challenge.org/">grand-challenge.org</a>.
+              </p>
+              <pre></pre>
+              <h2>Acknowledgements</h2>
+              <p>
+                We would like to acknowledge the people below for their
+                contribution to the EYRA benchmark platform.
+              </p>
+              <h4>Netherlands eScience Center</h4>
+              <p>
+                Tom Klaver, Pushpanjali Pawar, Maarten van Meersbergen, Roel
+                Zinkstok, Carlos Martinez-Ortiz, Alessio Sclocco, Rena Bakhshi,
+                Romulo Goncalves, Evelien Schat.
+              </p>
+              <h4>SURF</h4>
+              <p>
+                Maurice Bouwhuis, Mary Hester, Jan Bot, Haukur Pall Jonsson,
+                Giuseppe Gianquitto, Ymke van den Berg, Martin Brandt.
+              </p>
+              <h4>COMIC Platform</h4>
+              <p>
+                James Meakin (Radboud UMC), Bram van Ginneken (Radboud UMC).
+              </p>
+              <h4>Platform Requirements</h4>
+              <p>
+                Maria Eskevich (CLARIN ERIC), Melvin Wevers (Digital Humanities
+                Lab, KNAW Humanities Cluster), Mike Lees (UvA), Marius Staring
+                (LUMC), Kasper Marstal (Erasmus MC), Joeri van Leeuwen (ASTRON),
+                and Liam Connor (UvA).
+              </p>
+              <h4>Design Logo</h4>
+              <p>Thessa Kockelkorn (Double Standard Design)</p>
+              <p></p>
+              <p></p>
+              <h3></h3>
+              <p></p>
+            </div>
+          </div>
+        </main>
+      </div>
+      <div>
+        <div class="Footer__content--2oP_R Footer__bgBlue--1DoH6">
+          <h3>Subscribe To Stay Up To Date</h3>
+          <div class="Footer__buttonContainer--30kP-">
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-contained"
+              tabindex="0"
+              type="button"
+              id="subscribe"
+            >
+              <span class="MuiButton-label">Subscribe</span>
+            </button>
+          </div>
+        </div>
+        <div class="Footer__content--2oP_R Footer__bgDark--2Mcfe">
+          <p>
+            By<!-- -->
+            <a href="https://www.esciencecenter.nl/" target="_blank"
+              >Netherlands eScience Center</a
+            >
+            <!-- -->&amp; <a href="https://www.surf.nl/">SURF</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script id="__NEXT_DATA__" type="application/json">
+      {
+        "dataManager": "[]",
+        "props": {
+          "pageProps": {
+            "title": [
+              {
+                "type": "heading5",
+                "text": "Enhance-Your-Research Alliance (EYRA) benchmark platform",
+                "spans": []
+              }
+            ],
+            "desc": [
+              {
+                "type": "paragraph",
+                "text": "The Netherlands eScience Center and SURF formed an alliance with the mission to enhance research by providing an online platform to benchmark the performance of research software. The platform is available for researchers from all scientific disciplines, from physics and astronomy to humanities, social sciences and life sciences.",
+                "spans": [
+                  { "start": 4, "end": 31, "type": "strong" },
+                  {
+                    "start": 4,
+                    "end": 31,
+                    "type": "hyperlink",
+                    "data": {
+                      "link_type": "Web",
+                      "url": "https://esciencecenter.nl/"
+                    }
+                  },
+                  { "start": 36, "end": 40, "type": "strong" },
+                  {
+                    "start": 36,
+                    "end": 40,
+                    "type": "hyperlink",
+                    "data": {
+                      "link_type": "Web",
+                      "url": "https://www.surf.nl/en"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "text": "This project is led by Adriënne Mendrik (Netherlands eScience Center) and Annette Langedijk (SURF). Contact us if you would like to collaborate or set-up a benchmark: info@eyrabenchmark.net.",
+                "spans": [
+                  {
+                    "start": 167,
+                    "end": 189,
+                    "type": "hyperlink",
+                    "data": {
+                      "link_type": "Web",
+                      "url": "mailto: info@eyrabenchmark.net"
+                    }
+                  }
+                ]
+              },
+              { "type": "preformatted", "text": "  ", "spans": [] },
+              { "type": "heading3", "text": "Why Benchmarking?", "spans": [] },
+              {
+                "type": "paragraph",
+                "text": "One of the currently most well-known benchmarks for algorithm performance is ImageNet. In 2012, the ImageNet challenge [1,2] boosted the field of Artificial Intelligence by showing a drastic improvement in performance after the submission of a deep convolutional neural network (CNN) called AlexNet [3]. In various scientific disciplines there is a growing interest to benchmark algorithm performance on research data using the same data, metrics and ground truth to compare their performance for a specific task. Translating research questions into a benchmark design has the potential to lead to scientific breakthroughs. The point of benchmarking is to test the current status of algorithms, identify opportunities for improvement, and learn from eachother in order to enhance research.",
+                "spans": [
+                  { "start": 76, "end": 77, "type": "strong" },
+                  {
+                    "start": 77,
+                    "end": 85,
+                    "type": "hyperlink",
+                    "data": {
+                      "link_type": "Web",
+                      "url": "http://www.image-net.org/"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "text": "[1] https://en.wikipedia.org/wiki/ImageNet\n[2] \"From not working to neural networking\". The Economist. 25 June 2016. Retrieved 19 April 2019. \n[3] Krizhevsky, Alex, Ilya Sutskever, and Geoffrey E. Hinton. \"Imagenet classification with deep convolutional neural networks.\" Advances in neural information processing systems, 2012.",
+                "spans": [
+                  {
+                    "start": 4,
+                    "end": 42,
+                    "type": "hyperlink",
+                    "data": {
+                      "link_type": "Web",
+                      "url": "https://en.wikipedia.org/wiki/ImageNet"
+                    }
+                  },
+                  {
+                    "start": 47,
+                    "end": 86,
+                    "type": "hyperlink",
+                    "data": {
+                      "link_type": "Web",
+                      "url": "https://www.economist.com/news/special-report/21700756-artificial-intelligence-boom-based-old-idea-modern-twist-not"
+                    }
+                  },
+                  { "start": 88, "end": 101, "type": "em" },
+                  { "start": 272, "end": 321, "type": "em" }
+                ]
+              },
+              { "type": "preformatted", "text": "  ", "spans": [] },
+              { "type": "heading3", "text": "Why EYRA?", "spans": [] },
+              {
+                "type": "paragraph",
+                "text": "We aim to offer a platform to easily set-up and participate in benchmarks for research. We aim to provide:",
+                "spans": []
+              },
+              {
+                "type": "list-item",
+                "text": "Instructions on how to set-up a benchmark",
+                "spans": []
+              },
+              {
+                "type": "list-item",
+                "text": "Algorithm submission in docker containers, such that algorithms can be run in the cloud on the testing data.",
+                "spans": []
+              },
+              {
+                "type": "list-item",
+                "text": "Automatically generated leaderboard and analysis beyond the leaderboard to identify strengths and weaknesses. ",
+                "spans": []
+              },
+              {
+                "type": "list-item",
+                "text": "FAIR (Findable, Accessible, Interoperable, and Reusable) benchmarks, data, algorithms, and evaluation metrics.",
+                "spans": []
+              },
+              {
+                "type": "list-item",
+                "text": "SURF infrastructure.",
+                "spans": []
+              },
+              {
+                "type": "list-item",
+                "text": "Connect people from different scientific disciplines and promote cross-fertilization.",
+                "spans": []
+              },
+              {
+                "type": "paragraph",
+                "text": "We are not there yet. The platform is still actively under development. Click the Subscribe button at the bottom of the page to stay up to date.",
+                "spans": [
+                  { "start": 0, "end": 144, "type": "em" },
+                  { "start": 22, "end": 72, "type": "strong" },
+                  { "start": 82, "end": 92, "type": "strong" },
+                  {
+                    "start": 82,
+                    "end": 91,
+                    "type": "hyperlink",
+                    "data": {
+                      "link_type": "Web",
+                      "url": "https://www.eyrabenchmark.net/about#subscribe"
+                    }
+                  }
+                ]
+              },
+              { "type": "heading2", "text": "\nSource code", "spans": [] },
+              {
+                "type": "paragraph",
+                "text": "EYRA repository: https://github.com/EYRA-Benchmark",
+                "spans": [
+                  {
+                    "start": 17,
+                    "end": 50,
+                    "type": "hyperlink",
+                    "data": {
+                      "link_type": "Web",
+                      "url": "https://github.com/EYRA-Benchmark"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "text": "The EYRA benchmark platform is an open source platform based on the open source COMIC platform, which is associated to grand-challenge.org.",
+                "spans": [
+                  {
+                    "start": 80,
+                    "end": 94,
+                    "type": "hyperlink",
+                    "data": {
+                      "link_type": "Web",
+                      "url": "https://grand-challenge.org/Create_your_own_challenge/"
+                    }
+                  },
+                  {
+                    "start": 119,
+                    "end": 138,
+                    "type": "hyperlink",
+                    "data": {
+                      "link_type": "Web",
+                      "url": "https://grand-challenge.org/"
+                    }
+                  }
+                ]
+              },
+              { "type": "preformatted", "text": " ", "spans": [] },
+              { "type": "heading2", "text": "Acknowledgements", "spans": [] },
+              {
+                "type": "paragraph",
+                "text": "We would like to acknowledge the people below for their contribution to the EYRA benchmark platform.",
+                "spans": []
+              },
+              {
+                "type": "heading4",
+                "text": "Netherlands eScience Center",
+                "spans": []
+              },
+              {
+                "type": "paragraph",
+                "text": "Tom Klaver, Pushpanjali Pawar, Maarten van Meersbergen, Roel Zinkstok, Carlos Martinez-Ortiz, Alessio Sclocco, Rena Bakhshi, Romulo Goncalves, Evelien Schat.",
+                "spans": []
+              },
+              { "type": "heading4", "text": "SURF", "spans": [] },
+              {
+                "type": "paragraph",
+                "text": "Maurice Bouwhuis, Mary Hester, Jan Bot, Haukur Pall Jonsson, Giuseppe Gianquitto, Ymke van den Berg, Martin Brandt. ",
+                "spans": []
+              },
+              { "type": "heading4", "text": "COMIC Platform", "spans": [] },
+              {
+                "type": "paragraph",
+                "text": "James Meakin (Radboud UMC), Bram van Ginneken (Radboud UMC).",
+                "spans": []
+              },
+              {
+                "type": "heading4",
+                "text": "Platform Requirements",
+                "spans": []
+              },
+              {
+                "type": "paragraph",
+                "text": "Maria Eskevich (CLARIN ERIC), Melvin Wevers (Digital Humanities Lab, KNAW Humanities Cluster), Mike Lees (UvA), Marius Staring (LUMC), Kasper Marstal (Erasmus MC), Joeri van Leeuwen (ASTRON), and Liam Connor (UvA).",
+                "spans": []
+              },
+              { "type": "heading4", "text": "Design Logo", "spans": [] },
+              {
+                "type": "paragraph",
+                "text": "Thessa Kockelkorn (Double Standard Design)",
+                "spans": []
+              },
+              { "type": "paragraph", "text": "", "spans": [] },
+              { "type": "paragraph", "text": "", "spans": [] },
+              { "type": "heading3", "text": "", "spans": [] },
+              { "type": "paragraph", "text": "", "spans": [] }
+            ]
+          }
+        },
+        "page": "/about",
+        "query": {},
+        "buildId": "NTnL_wv5E_81H4VZtcYAU",
+        "runtimeConfig": {
+          "backendURL": "https://api.eyrabenchmark.net/api/v1/",
+          "frontendURL": "https://www.eyrabenchmark.net/",
+          "prismicEndpoint": "https://eyra-test.prismic.io/api/v2"
+        }
+      }
+    </script>
+<!--    <script-->
+<!--      async=""-->
+<!--      data-next-page="/about"-->
+<!--      src="_next/static/NTnL_wv5E_81H4VZtcYAU/pages/about.js"-->
+<!--    ></script>-->
+    <script
+      async=""
+      data-next-page="/_app"
+      src="_next/static/NTnL_wv5E_81H4VZtcYAU/pages/_app.js"
+    ></script>
+    <script
+      src="_next/static/chunks/commons.03b28b1d231bf6a5bf84.js"
+      async=""
+    ></script>
+    <script
+      src="_next/static/chunks/styles.3678095508a3a5d6aaf2.js"
+      async=""
+    ></script>
+  </body>
+</html>
